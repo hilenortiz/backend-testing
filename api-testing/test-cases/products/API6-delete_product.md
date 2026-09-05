@@ -1,14 +1,14 @@
 # API6: DELETE - Delete Product
 
 ## Descripción
-Verificar que el endpoint permite eliminar un producto y refleja correctamente el borrado.
+Verificar la eliminación de un producto existente mediante su ID.
 
 ## Request
 - *Método:* DELETE
 - *URL:* `{{base_url}}/products/1`
 - *Body:* No aplica
 
-## Assertions (Postman Tests)
+## Assertions
 ```javascript
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
@@ -20,10 +20,11 @@ pm.test("Product is marked as deleted", function () {
 ```
 
 ## Resultado Obtenido
-Status 200 OK. La respuesta devolvió `isDeleted: true` y `deletedOn` con la fecha/hora del borrado.
+Status 200 OK. La respuesta devolvió `isDeleted: true` y la fecha de eliminación en `deletedOn`
+
 
 ## Nota técnica
-DummyJSON implementa un "soft delete" (borrado lógico): el producto no desaparece de la respuesta, sino que queda marcado con `isDeleted: true` en vez de eliminarse físicamente. Es un patrón común en APIs reales para mantener trazabilidad de datos eliminados.
+La API simula un borrado lógico (soft delete), es decir, el producto no se elimina físicamente de la base de datos, sino que se marca como inactivo devolviendo isDeleted: true. Es una práctica habitual para no perder historial de datos.
 
 ## Estado
 ✅ Aprobado (2/2 assertions passed)

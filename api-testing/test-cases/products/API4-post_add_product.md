@@ -1,11 +1,12 @@
 # API4: POST - Add Product
 
 ## Descripción
-Verificar que el endpoint permite crear un nuevo producto correctamente.
+Verificar la creación de un nuevo producto enviando título y precio en el cuerpo de la solicitud.
 
 ## Request
 - *Método:* POST
 - *URL:* `{{base_url}}/products/add`
+- *Headers:* `Content-Type: application/json`
 - *Body (raw JSON):*
 ```json
 {
@@ -14,7 +15,7 @@ Verificar que el endpoint permite crear un nuevo producto correctamente.
 }
 ```
 
-## Assertions (Postman Tests)
+## Assertions 
 ```javascript
 pm.test("Status code is 201", function () {
     pm.response.to.have.status(201);
@@ -30,7 +31,6 @@ pm.test("Product title is correct", function () {
 ```
 
 ## Resultado Obtenido
-Status 201 Created. La respuesta devolvió:
 ```json
 {
     "id": 195,
@@ -38,7 +38,7 @@ Status 201 Created. La respuesta devolvió:
     "price": 45.5
 }
 ```
-Se generó un ID nuevo (195) y el título coincide con el enviado. Nota: se envió `price: 45.50` y la API devolvió `45.5` — es el mismo valor numérico, sin pérdida de datos.
+Status 201 Created. Se generó el nuevo producto con ID 195, confirmando el título enviado (QA Test Product) y el precio normalizado a 45.5.
 
 ## Estado
 ✅ Aprobado (3/3 assertions passed)

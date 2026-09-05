@@ -1,14 +1,14 @@
 # API1: GET - All Products
 
 ## Descripción
-Verificar que el endpoint devuelve la lista completa de productos disponibles, con la estructura de respuesta correcta.
+Verificar que al pedir los productos, la API devuelva la lista completa.
 
 ## Request
 - *Método:* GET
 - *URL:* `{{base_url}}/products`
 - *Body:* No aplica
 
-## Assertions (Postman Tests)
+## Assertions 
 ```javascript
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
@@ -24,7 +24,7 @@ pm.test("Products is an array", function () {
 ```
 
 ## Resultado Obtenido
-Status 200 OK. La respuesta contiene la propiedad `products` como un array, con la lista completa de productos.
+Status 200 OK. Retornó el JSON con la propiedad products como una lista de los productos disponibles.
 
 ## Estado
 ✅ Aprobado (3/3 assertions passed)
