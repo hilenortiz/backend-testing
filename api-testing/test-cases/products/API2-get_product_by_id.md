@@ -1,0 +1,30 @@
+# API2: GET - Product by ID
+
+## Descripción
+Verificar que el endpoint devuelve el producto correcto cuando se solicita por un ID válido.
+
+## Request
+- *Método:* GET
+- *URL:* `{{base_url}}/products/1`
+- *Body:* No aplica
+
+## Assertions (Postman Tests)
+```javascript
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+pm.test("Response contains product ID", function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property("id");
+});
+pm.test("Product ID is 1", function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData.id).to.eql(1);
+});
+```
+
+## Resultado Obtenido
+Status 200 OK. La respuesta contiene el producto con `id: 1`, coincidiendo con el solicitado.
+
+## Estado
+✅ Aprobado (3/3 assertions passed)
