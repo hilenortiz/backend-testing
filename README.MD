@@ -58,18 +58,18 @@ Para este proyecto elegí **DummyJSON** porque es una API REST sencilla y me per
 
 ✅ **22 de 22 tests pasaron (100% de ejecución exitosa en Postman Collection Runner).**
 
-![Resultados del Collection Runner](api-testing/evidencia/runner_results.png)
+![Resultados del Collection Runner](api-testing/evidencia/runner_results_4.png)
 
 Para **API4 (POST)** y **API6 (DELETE)** se incluye el JSON de respuesta como texto dentro de la documentación, en vez de captura, ya que el dato en sí es lo relevante a validar.
 
 <details>
 <summary>Ver el detalle completo de los 22 tests (vista List de Postman)</summary>
 
-![Detalle 1](api-testing/evidencia/runner_results_2.png)
+![Detalle 1](api-testing/evidencia/runner_results.png)
 
-![Detalle 2](api-testing/evidencia/runner_results_3.png)
+![Detalle 2](api-testing/evidencia/runner_results_2.png)
 
-![Detalle 3](api-testing/evidencia/runner_results_4.png)
+![Detalle 3](api-testing/evidencia/runner_results_3.png)
 
 </details>
 
