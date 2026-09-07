@@ -8,13 +8,13 @@ Proyecto de QA enfocado en **testing de APIs REST** y **validación de datos con
 
 ## 📋 Sobre este proyecto
 
-Este proyecto complementa mi portfolio de testing manual y automatización, incorporando dos áreas clave del rol de QA: **API Testing** y **validación de datos con SQL**.
+Este proyecto complementa mi portfolio de testing manual y automatización. En este caso, trabajé con **API Testing** y **validación de datos con SQL**.
 
 Documenté pruebas sobre los recursos **Products** y **Users** utilizando **Postman**, incluyendo validaciones de códigos de estado HTTP, estructura y contenido de las respuestas mediante assertions con `pm.test`.
 
-Además, armé una base de datos **SQLite** para practicar consultas de validación de datos y complementar las pruebas de API con controles a nivel de base de datos.
+Además, armé una base de datos en **SQLite** para practicar consultas SQL y complementar las pruebas realizadas sobre la API.
 
-Para este proyecto elegí **DummyJSON** por ofrecer una API REST sencilla y adecuada para practicar diferentes escenarios de testing de forma controlada.
+Para este proyecto elegí **DummyJSON** porque es una API REST sencilla y me permitió practicar diferentes escenarios de testing.
 
 ---
 
@@ -23,7 +23,7 @@ Para este proyecto elegí **DummyJSON** por ofrecer una API REST sencilla y adec
 * 🧪 **API Testing:** Operaciones CRUD sobre el recurso **Products** y consultas GET sobre **Users**, incluyendo casos válidos e inválidos.
 * ✅ **Assertions:** Validaciones escritas en Postman (`pm.test`) sobre status code, estructura y contenido de la respuesta.
 * 🗄️ **SQL:** Base de datos local en SQLite con tablas de ejemplo, con consultas comentadas paso a paso para practicar filtros y búsquedas frecuentes de QA.
-* 📄 **Documentación:** Cada request tiene su propio archivo explicando que se hizo, que se valido, como y que resultado se obtuvo.
+* 📄 **Documentación:** Cada request tiene su propio archivo explicando qué se hizo, qué se validó, cómo y qué resultado se obtuvo.
 
 ---
 
@@ -129,7 +129,7 @@ backend-testing/
 
 Me interesa el testing de software, con formación práctica en **pruebas manuales**, **automatización E2E** y, en este proyecto en particular, **Testing de APIs** y **validación de datos con SQL**.
 
-Este repositorio es la segunda parte de mi portfolio de QA. La primera está enfocada en testing manual y automatización con Cypress y se encuentra en [qa-portfolio](../qa-portfolio).
+Este repositorio es la segunda parte de mi portfolio de QA. La primera está enfocada en testing manual y automatización con Cypress: [qa-portfolio](../qa-portfolio).
 
 Estoy buscando mi primera oportunidad formal en QA, con ganas de seguir aprendiendo dentro de un equipo real.
 
