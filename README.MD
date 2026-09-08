@@ -129,7 +129,7 @@ backend-testing/
 
 Me interesa el testing de software, con formación práctica en **pruebas manuales**, **automatización E2E** y, en este proyecto en particular, **Testing de APIs** y **validación de datos con SQL**.
 
-Este repositorio es la segunda parte de mi portfolio de QA. La primera está enfocada en testing manual y automatización con Cypress: [qa-portfolio](../qa-portfolio).
+Este repositorio es la segunda parte de mi portfolio de QA. La primera está enfocada en testing manual y automatización con Cypress: [qa-portfolio](https://github.com/hilenortiz/qa-portfolio).
 
 Estoy buscando mi primera oportunidad formal en QA, con ganas de seguir aprendiendo dentro de un equipo real.
 
